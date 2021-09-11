@@ -1,0 +1,99 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    height: 20vh;
+    position: relative; /*coloquei isso aqui apenas pro container absolute funcionar*/
+    margin-bottom: 50px;
+}
+
+.container {
+    height: 80%;
+    width: 95%;
+
+    /* para o container ser relativo ao header, o container precisa ser absolute e o header precisa ser relative*/
+    position: absolute;
+
+    /* translate apenas para centralizar a div, funciona com responsividade tb */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: black solid 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container h1 {
+    color: #048bb6;
+    font-size: 60px;
+    position: relative;
+    top: 25%;
+}
+
+.container p {
+    font-size: 20px;
+    position: absolute;
+    width: 200px;
+    color: gray;
+    background-color: white;
+    bottom: 0px;
+    /* centralizando horizontalmente e transladando para baixo */
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+main {
+    position: relative;
+    line-height: 1.2;
+}
+
+.flex {
+    position: absolute;
+    width: 95%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25.5px;
+    justify-content: space-between;
+}
+
+.left {
+    width: 56.5vw;
+    min-width: 600px;
+}
+
+.right {
+    width: 34vw;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+article h2 {
+    font-size: 40px;
+    color: hsl(197deg 94% 36%);
+    border-bottom: gray solid 2px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+article h3 {
+    font-weight: bold;
+}
+
+.bulleted ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 2%;
+}
+
+.bulleted li {
+    margin-top: 5px;
+}
+
+li {
+    margin-bottom: 12px;
+}
